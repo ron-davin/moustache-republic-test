@@ -72,7 +72,7 @@ function handleAddToCart(title, price, image) {
           <img class='cart-item-image' src="${image}">
           <div class='cart-item-info'>
             <p class='cart-item-title'>${title}</p>
-            <p class='cart-item-quantity'><span class=""medium></span> x $${price}</p>
+            <p class='cart-item-quantity'><span class="medium"></span> x $${price}</p>
             <p class='cart-item-variant'>Size: M</p>
           </div>
         </div>`)
@@ -88,7 +88,7 @@ function handleAddToCart(title, price, image) {
           <img class='cart-item-image' src="${image}">
           <div class='cart-item-info'>
             <p class='cart-item-title'>${title}</p>
-            <p class='cart-item-quantity'><span class=""large></span> x $${price}</p>
+            <p class='cart-item-quantity'><span class="large"></span> x $${price}</p>
             <p class='cart-item-variant'>Size: L</p>
           </div>
         </div>`)
