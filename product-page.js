@@ -56,13 +56,13 @@ function handleAddToCart(title, price, image) {
           <img class='cart-item-image' src="${image}">
           <div class='cart-item-info'>
             <p class='cart-item-title'>${title}</p>
-            <p class='cart-item-quantity'><span></span> x $${price}</p>
+            <p class='cart-item-quantity'><span class="small"></span> x $${price}</p>
             <p class='cart-item-variant'>Size: S</p>
           </div>
         </div>`)
       }
       cartItems.push("S")
-      document.querySelector(".cart-item-quantity span").textContent = smallQuantity
+      document.querySelector(".cart-item-quantity .small").textContent = smallQuantity
       totalCartQuantity++
     } else if (document.querySelector(".selected").textContent == "M") {
       mediumQuantity++
@@ -72,13 +72,13 @@ function handleAddToCart(title, price, image) {
           <img class='cart-item-image' src="${image}">
           <div class='cart-item-info'>
             <p class='cart-item-title'>${title}</p>
-            <p class='cart-item-quantity'><span></span> x $${price}</p>
+            <p class='cart-item-quantity'><span class=""medium></span> x $${price}</p>
             <p class='cart-item-variant'>Size: M</p>
           </div>
         </div>`)
       }
       cartItems.push("M")
-      document.querySelector(".cart-item-quantity span").textContent = mediumQuantity
+      document.querySelector(".cart-item-quantity .medium").textContent = mediumQuantity
       totalCartQuantity++
     } else if (document.querySelector(".selected").textContent == "L") {
       largeQuantity++
@@ -88,13 +88,13 @@ function handleAddToCart(title, price, image) {
           <img class='cart-item-image' src="${image}">
           <div class='cart-item-info'>
             <p class='cart-item-title'>${title}</p>
-            <p class='cart-item-quantity'><span></span> x $${price}</p>
+            <p class='cart-item-quantity'><span class=""large></span> x $${price}</p>
             <p class='cart-item-variant'>Size: L</p>
           </div>
         </div>`)
       }
       cartItems.push("L")
-      document.querySelector(".cart-item-quantity span").textContent = largeQuantity
+      document.querySelector(".cart-item-quantity .large").textContent = largeQuantity
       totalCartQuantity++
     }
 
